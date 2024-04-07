@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* color-scheme: dark; */
+}
+
+@font-face {
+  font-family: "Overused Grotesk";
+  
+  src: url("/fonts/OverusedGrotesk.woff2");
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: black; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #dff1fd4b; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+#logo{
+  font-feature-settings: "ss01" 1, "ss02" 1;
+}
+
+body,html{
+  height: 100%;
+  font-display: swap;
+  scrollbar-width: thin;
+}
+
+
+@keyframes loading {
+  0%{
+    scale: 2;
+    translate: -50% 0%;
+  }
+  100%{
+    scale: 2;
+    translate: 50% 0%;
+  }
+}
